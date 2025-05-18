@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.caixa:nth-child(1) {color: red; background-color: red; }
+.caixa:nth-child(2) { color: blue; background-color: blue; }
+.caixa:nth-child(3) {color: green; background-color: green; }
+.caixa:nth-child(4) { color: yellow; background-color: yellow; }
+
+
+
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade com css</title>
+    <link rel="stylesheet" href="Questao1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="caixa">1</div>
+        <div class="caixa">2</div>
+        <div class="caixa">3</div>
+        <div class="caixa">4</div>
+    </div>
+    
+</body>
+</html>
